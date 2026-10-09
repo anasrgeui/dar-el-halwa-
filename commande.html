@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar El Halwa - patisserie fine tunisienne</title>
+</head>
+<body>
+    <h1>Dar El Halwa</h1>
+        <figure>
+            <img src="c:\patisserie.jpg.jfif" alt="Dar El Halwa" width="600">
+            <figcaption>Notre vitrine de mignardises traditionnelles.</figcaption>
+        </figure>
+    
+    <header>Patisserie fine tunisienne depuis 1900 </header>
+      <nav>
+        <ul>
+        <li><a href="àpropos.html">à propos</a></li>
+        <li><a href="Nosproduits.html">Nos produits</a></li>
+        <li><a href="Nosservices.html">Nos services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2> Commander un gateau personnalisé </h2>
+        <form action="traitement.php" method="post">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <label for="lb1">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+                <label for="lb2">Prénom :</label>
+                <input type="text" id="prénom" name="prénom" required><br>
+                <label for="lb3">Adresse électronique :</label>
+                <input type="email" id="email" name="Adresseélectronique" required><br>
+                <p>
+                <label for="lb4">Télephone :</label>
+                <input type="tel" id="telephone" name="telephone" pattern="\+216[0-9]{8}"title="+216 suivi de 8 chiffres" placeholder="+21622550211" required>><br>
+                </p>
+                <label for="lb5">Code postal :</label>
+                <input type="text" id="cp" name="codepostal" required> <br>
+                <label for="lb6">Adresse de livraison :</label>
+                <input type="zone de text" id="Adresse de livraison" name="Adresse liv" required> <br>
+                <textarea name="Adresse liv" id="Adresse de livraison" cols="40" rols="3"></textarea> <br>
+                <label for="lb7">Gouvernorat :</label>
+                <select>
+                    <option value="Sfax">Sfax </option>
+                    <option value="Tunis">Tunis </option>
+                    <option value="Sousse">Sousse </option>
+                    <option value="Gabès">Gabès </option>
+                    <option value="Tunis">Tunis </option>
+                    <option value="Autre">Autre... </option>
+                </select> <br>
+            </fieldset>
+             <fieldset>
+                <legend>Votre gateau</legend>
+                <label for="lb1">Occasion :</label> 
+                <input type="radio" id="occ-anniv" name="Anniversaire" value="anniversaire" required>anniversaire
+                <input type="radio" id="occ-anniv" name="Mariage" value="Mariage" required>Mariage
+                <input type="radio" id="occ-anniv" name="Fiancailles" value="Fiancailles" required>Fiancailles
+                <input type="radio" id="occ-anniv" name="Autre-" value="Autre-" required>Autre- <br>
+                <label for="lb2">Date de retrait :</label>
+                <input type="date" id="Occasion" name="Occasion" value="Occasion" required><br>
+                <label for="lb3">Nombre de parts :</label>
+                <input type="numbre"  min="6" max="100" step ="6" value ="12" id="Nombredeparts" name="Nombredeparts" required><br>
+                <label for="lb4">Parfums souhaités :</label> 
+                <input type="checkbox" id="Parfumssouhaités" name="Chocolat " required>Chocolat
+                <input type="checkbox" id="Parfumssouhaités" name="Vanille" required>Vanille
+                <input type="checkbox" id="Parfumssouhaités" name="Pistache" required>Pistache
+                <input type="checkbox" id="Parfumssouhaités" name="Fruits rouges" required>Fruits rouges <br>
+                <label for="lb5">Niveau de sucre :</label>
+                <input type="range" id="Niveaudesucre" name="Niveaudesucre" required><br>
+                <label for="lb6">Couleur du glaçe :</label>
+                <input type="color" value="#c8912a" id="Couleur " name="Couleur " required><br>
+                <label for="lb7">Message sur le gâteau :</label>
+                <input type="text" id="Messagesurlegâteau" name="Messagesurlegâteau" required><br>
+                <label for="lb8">Photo de modèle :</label>
+                <input type="file" id="Photodemodèle" accept="image" required><br>
+                <select multiple size="4" name="decors[]" id="decors">
+                    <optgroup label="décors sucré">
+                        <option value="0">fleurs en pate à sucre </option>
+                        <option value="1">Fruits Frais </option>
+                        <option value="2">Motifs en chocolat </option>
+                        <option value="3">Feuilles d'or comistibles </option>
+                    </optgroup>
+                    <optgroup label="Décors frais">
+                        <option value="fruitsR">Fruits rouges</option>
+                        <option value="citron">Citron </option>
+                         <option value="menthe">Menthe fraiche </option>
+                    </optgroup>
+                </select> <br>
+                <label for="lb9" >Languages de décoration :</label> <br>
+                <textarea name="languagesdedécoration" id="pre" rows="4" cols="40" max="200" ></textarea><br>
+            </fieldset>
+             <fieldset>
+                <legend>Confirmation</legend>
+                 <p>
+                <button type="submit">Envoyer ma commande</button>
+                <button type="reset">Tout effacer</button>
+            </p>
+            </fieldset>
+           
+        </form>
+<footer>
+        <h2>Suivez-nous</h2>
+        <a href="https://www.facebook.com/darelhalwa " target="_blank" rel="noopener">
+        facebook </a> <br>
+         <a href="https://www.instagram.com/darelhalwa " target="_blank" rel="noopener">
+        instagram </a> <br>
+         <a href="https://www.linkedin.com/company/darelhalwa " target="_blank" rel="noopener">
+        linkedin </a>
+    </footer>
+</body>
