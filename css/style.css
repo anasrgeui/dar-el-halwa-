@@ -3,6 +3,7 @@
  --chocolat: #4a2c1a;
  --creme: #fff8ef;
  --espace: 1rem;
+ --police-titre :var(--chocolat);
 }
 body {
  background-color: var(--creme);
@@ -35,7 +36,7 @@ p,li{
     padding: var(--espace);  
 } 
 .mise-en-avant {
-    font-size : 10 px ;
+    font-size : 20px ;
     font-style: italic;
 }
 a:link { color: var(--miel); }
@@ -46,15 +47,16 @@ p { color: green; }
 main p { color: blue; }
 .mise-en-avant { color: red; }
 .carte-info {
-            width: 400px;
-            padding: 20px;
+            width: 25rem;
+            padding: 1.25rem;
             border: 2px var(--miel);
-            margin: 30px; 
+            margin: 14rem; 
             } 
 table { border-collapse: collapse; width: 100%; }
 thead {
     background-color: var(--chocolat) ;
-    color : var(--chocolat);   }
+    color : var(--miel);   
+}
 th, td { 
         border: 1px ;
         padding: 8px ;
